@@ -1,0 +1,15 @@
+<div class="shopping-container">
+  
+  <div class="product-list">
+    <div class="card" style="width: 20rem;" *ngFor="let product of products">
+      <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+      <div class="card-block">
+        <h4 class="card-title">{{product.name}}</h4>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" (click)="addToCart(product)" class="btn btn-primary">Add to cart</a>
+      </div>
+    </div>
+  </div>
+  
+  <app-cart [cart]="cart" [quantity]="quantity" [total]="total"></app-cart>
+</div>

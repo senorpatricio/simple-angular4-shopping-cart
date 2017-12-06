@@ -1,0 +1,12 @@
+<div class="card">
+  <div *ngFor="let item of cart" class="cart-list">
+    <p>{{item.name}} </p>
+    <p>{{item.price}}</p> 
+  </div>
+  
+  <div class="cart">
+    <h2>Total Items: {{quantity}}</h2>
+    <h2>Total Cost: ${{total | number:'1.2-2'}}</h2>
+  </div>
+
+</div>
